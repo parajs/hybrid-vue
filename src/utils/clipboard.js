@@ -1,12 +1,12 @@
-import Vue from "vue";
 import Clipboard from "clipboard";
+import { Notify } from "vant";
 
 function clipboardSuccess() {
-  Vue.prototype.$toast.success("拷贝成功！");
+  Notify({ type: "success", message: "拷贝成功！" });
 }
 
 function clipboardError() {
-  Vue.prototype.$toast.success("拷贝失败！");
+  Notify({ type: "danger", message: "拷贝失败！" });
 }
 
 export default function handleClipboard(text, event) {
