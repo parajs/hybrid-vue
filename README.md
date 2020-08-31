@@ -45,12 +45,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 https://www.jianshu.com/p/5bda177acc6c
 
 H5 与 native 的数据交互
-1、h5 页面发起一个自定义 URL Scheme 协议请求（相关 action 及参数），native 拦截这个请求后，再由 native 调用 h5 中定义函数同时把处理结果通过回调函数方式传入。
+1、h5 页面发起一个自定义 URL Scheme 协议请求（相关 action 及参数），native 拦截这个请求后，再由 native 调用 h5 中定义函数同时把 action 及处理结果通过回调函数参数方式传入。
 
 ```js
-const url = 'vant://xxx/?params={"userId": "", token:""}&&callback=getUser';
+const url = 'vant://xxx/?params={"userId": "", token:""}';
 window.location.href = url;
-window.onCallJs = function(callback, json) {};
+window.onCallJs = function(action, json) {};
 ```
 
 2、H5 调用 native 方式
@@ -58,7 +58,7 @@ window.onCallJs = function(callback, json) {};
 - 2.1 h5 页面发起一个自定义 URL Scheme 协议请求（相关 action 及参数）
 
 ```js
-const url = "vant://xxx"; //action可以是原生页返回，
+const url = "vant://xxx";
 window.location.href = url;
 ```
 
