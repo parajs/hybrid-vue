@@ -85,4 +85,8 @@ vue-i118n 库提供国际化支持
 - 支持不同部署环境不同配置
 - 支持引入 svg 图标
 - 定义一套 native 与 h5 交互规范
-- 支持 Git commit 规范
+- [支持 Git commit 规范](https://developer.aliyun.com/mirror/npm/package/vue-cli-plugin-commitlint)
+  - 自动检测 commit 是否规范，不规范不允许提交
+  - 自动提示 commit 填写格式。不怕忘记规范怎么写
+  - 集成 git add . && git commit 不需要在执行两个命令
+  - 自动生成 changelog
