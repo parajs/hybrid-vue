@@ -74,3 +74,15 @@ window.onCallJs(params);
 ### 中文简体（zh-CN） | 中文繁体(zh-TW) | 英语(en-US) 国际化
 
 vue-i118n 库提供国际化支持
+
+### Features
+
+- vant 库用是 less 预处理器，所以项目里优先推荐也用 less，保持一致，devDependencies 依赖里 scss 相关库,所以也支持 scss
+- 支持 mock 数据
+- 支持 vconsole 功能，开发环境默认开起调试功能
+- 支持国际化功能
+- 支持 vue 代码书写规范提示及美化
+- 支持不同部署环境不同配置
+- 支持引入 svg 图标
+- 定义一套 native 与 h5 交互规范
+- 支持 Git commit 规范
