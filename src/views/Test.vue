@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="title">h5与native交互例子</div>
+    <div class="title">{{ $t("word") }}</div>
     <van-button @click="getUser" type="primary">button</van-button>
   </div>
 </template>
@@ -12,6 +13,7 @@ export default {
   },
   name: "Test",
   mounted() {
+    console.log(this);
     window.onCallJs = function(json) {
       alert(json);
     };

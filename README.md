@@ -70,3 +70,7 @@ window.onCallJs(params);
 
 3、native 调用 h5 方式
 在 h5 中曝露一些全局对象（包括方法），然后在原生 native 中调用这些对象。
+
+### 中文简体（zh-CN） | 中文繁体(zh-TW) | 英语(en-US) 国际化
+
+vue-i118n 库提供国际化支持

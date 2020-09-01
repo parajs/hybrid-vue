@@ -8,7 +8,6 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "Layout",
     component: Layout,
     children: [
       {

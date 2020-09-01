@@ -7,6 +7,7 @@ function resolve(dir) {
 
 module.exports = {
   lintOnSave: false,
+
   devServer: {
     open: true,
     port: 3000,
@@ -68,5 +69,14 @@ module.exports = {
         symbolId: "icon-[name]"
       })
       .end();
+  },
+
+  pluginOptions: {
+    i18n: {
+      locale: "zh-CN",
+      fallbackLocale: "zh-CN",
+      localeDir: "locales",
+      enableInSFC: true
+    }
   }
 };

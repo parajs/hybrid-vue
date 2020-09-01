@@ -3,6 +3,7 @@ import "@/styles/index.less";
 import { NavBar, Notify } from "vant";
 import Vue from "vue";
 import App from "./App.vue";
+import i18n from "./i18n";
 import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
@@ -12,7 +13,7 @@ if (process.env.NODE_ENV == "mock") {
   require("./mock");
 }
 
-if (process.env.NODE_ENV === "production") {
+if (process.env.NODE_ENV !== "production") {
   const VConsole = require("vconsole");
   new VConsole();
 }
@@ -22,5 +23,6 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   store,
+  i18n,
   render: h => h(App)
 }).$mount("#app");
