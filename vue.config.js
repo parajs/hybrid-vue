@@ -44,7 +44,8 @@ module.exports = {
         api: resolve("src/api"),
         assets: resolve("src/assets"),
         store: resolve("src/store"),
-        mock: resolve("src/mock")
+        mock: resolve("src/mock"),
+        urlScheme: resolve("src/urlScheme")
       }
     }
   },

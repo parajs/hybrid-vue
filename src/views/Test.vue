@@ -7,29 +7,29 @@
 </template>
 <script>
 import { Button } from "vant";
+import { READ_MEM_FROM_NATIVE } from "urlScheme";
 export default {
   components: {
     [Button.name]: Button
   },
   name: "Test",
-  mounted() {
-    console.log(this);
-    window.onCallJs = function(json) {
-      alert(json);
+  data() {
+    return {
+      params: {}
     };
-    window.location.href =
-      'mobxybank://NATIVE_SERVICE_DATA_SERVICE/READ_MEM_FROM_NATIVE/?params={"userId": "", token:""}&&callback=findUser';
+  },
+  mounted() {
+    READ_MEM_FROM_NATIVE({ userId: "", token: "" });
+    window.onCallJs = this.onCallJs;
   },
   methods: {
-    getUser() {
-      // https://baidu.com
-      window.onCallJs(function(json) {
-        alert(json);
-      });
-
-      //   window.onCallJs.findUser(function(json){
-
-      //   })
+    onCallJs(result) {
+      // {
+      //   params: {},
+      //   action: '',
+      //   type: ''
+      // }
+      console.log(result);
     }
   }
 };

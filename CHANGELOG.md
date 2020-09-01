@@ -7,6 +7,7 @@
  - | init | [509a659](https://github.com/parajs/vant-vue-template/commit/509a659)
  - | 修改Notify | [eb70c08](https://github.com/parajs/vant-vue-template/commit/eb70c08)
  - | 删除无用页面 | [ff99761](https://github.com/parajs/vant-vue-template/commit/ff99761)
+ - | 添加vue-cli3的代码提交检查规范 | [db7c35e](https://github.com/parajs/vant-vue-template/commit/db7c35e)
  - | 添加国际化功能 | [be99c11](https://github.com/parajs/vant-vue-template/commit/be99c11)
 
 
