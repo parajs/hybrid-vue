@@ -8,7 +8,7 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "cz": "npm run log && git add . && git cz",
-    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.js'",
+    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.{js,vue}\" --locales \"./src/locales/**/*.js\"",
     "log": "conventional-changelog --config ./node_modules/vue-cli-plugin-commitlint/lib/log -i CHANGELOG.md -s -r 0",
     "serve:mock": "cross-env NODE_ENV=mock vue-cli-service serve"
   },
