@@ -5,6 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "report": "vue-cli-service build --report",
+    "staging": "vue-cli-service build --mode staging",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "cz": "npm run log && git add . && git cz",

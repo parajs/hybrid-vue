@@ -71,7 +71,20 @@ module.exports = {
       })
       .end();
   },
-
+  css: {
+    loaderOptions: {
+      less: {
+        // 若使用 less-loader@5，请移除 lessOptions 这一级，直接配置选项。
+        lessOptions: {
+          modifyVars: {
+            // 直接覆盖变量
+            green: "#1989fa",
+            blue: "#07c160"
+          }
+        }
+      }
+    }
+  },
   pluginOptions: {
     i18n: {
       locale: "zh-CN",

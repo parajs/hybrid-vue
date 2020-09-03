@@ -1,4 +1,4 @@
-# 0.1.0 (2020-09-02)
+# 0.1.0 (2020-09-03)
 
 ### 🌟 新功能
 范围|描述|commitId
@@ -15,6 +15,7 @@
 ### 🐛 Bug 修复
 范围|描述|commitId
 --|--|--
+ - | i18n:report启动报错问题 | [cb9c1d7](https://github.com/parajs/vant-vue-template/commit/cb9c1d7)
  - | package.json | [005ef0a](https://github.com/parajs/vant-vue-template/commit/005ef0a)
 
 
