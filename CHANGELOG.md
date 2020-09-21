@@ -1,4 +1,4 @@
-# 0.1.0 (2020-09-03)
+# 0.1.0 (2020-09-21)
 
 ### 🌟 新功能
 范围|描述|commitId
@@ -7,6 +7,7 @@
  - | init | [509a659](https://github.com/parajs/vant-vue-template/commit/509a659)
  - | url scheme定义 | [e7cddf8](https://github.com/parajs/vant-vue-template/commit/e7cddf8)
  - | 修改Notify | [eb70c08](https://github.com/parajs/vant-vue-template/commit/eb70c08)
+ - | 修改主题色为蓝色 | [76be7f9](https://github.com/parajs/vant-vue-template/commit/76be7f9)
  - | 删除无用页面 | [ff99761](https://github.com/parajs/vant-vue-template/commit/ff99761)
  - | 添加vue-cli3的代码提交检查规范 | [db7c35e](https://github.com/parajs/vant-vue-template/commit/db7c35e)
  - | 添加国际化功能 | [be99c11](https://github.com/parajs/vant-vue-template/commit/be99c11)
