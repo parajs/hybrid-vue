@@ -15,6 +15,7 @@ const routes = [
         name: "Home",
         component: Home,
         meta: {
+          keepAlive: true,
           title: "home-title"
         }
       },
@@ -23,20 +24,11 @@ const routes = [
         name: "My",
         component: My,
         meta: {
+          keepAlive: true,
           title: "my-title"
         }
       }
     ]
-  },
-  {
-    path: "/",
-    name: "Home",
-    component: Home
-  },
-  {
-    path: "/my",
-    name: "My",
-    component: My
   },
   {
     path: "/test",

@@ -1,6 +1,9 @@
 <template>
   <div class="layout">
-    <router-view />
+    <keep-alive>
+      <router-view v-if="$route.meta && $route.meta.keepAlive"> </router-view>
+    </keep-alive>
+    <router-view v-if="!($route.meta && $route.meta.keepAlive)"> </router-view>
     <BottomNav ref="bottomNav" />
   </div>
 </template>

@@ -14,6 +14,7 @@
  - | 实现一键切换-h5与后调试|h5与app调试 | [f0495c4](https://github.com/parajs/vant-vue-template/commit/f0495c4)
  - | 添加vue-cli3的代码提交检查规范 | [db7c35e](https://github.com/parajs/vant-vue-template/commit/db7c35e)
  - | 添加国际化功能 | [be99c11](https://github.com/parajs/vant-vue-template/commit/be99c11)
+ - | 页面结构调整、刘海适配等 | [baddb17](https://github.com/parajs/vant-vue-template/commit/baddb17)
 
 
 ### 🐛 Bug 修复
