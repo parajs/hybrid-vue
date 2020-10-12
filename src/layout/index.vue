@@ -34,6 +34,5 @@ export default {
 .layout {
   height: calc(100vh - 50px);
   position: relative;
-  box-sizing: border-box;
 }
 </style>

@@ -15,8 +15,7 @@ const routes = [
         name: "Home",
         component: Home,
         meta: {
-          keepAlive: true,
-          title: "home-title"
+          keepAlive: true
         }
       },
       {
@@ -24,8 +23,7 @@ const routes = [
         name: "My",
         component: My,
         meta: {
-          keepAlive: true,
-          title: "my-title"
+          keepAlive: true
         }
       }
     ]

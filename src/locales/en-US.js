@@ -1,3 +1,5 @@
 module.exports = {
-  word: "hellwold"
+  "home-title": "home",
+  "my-title": "my",
+  "test-title": "test"
 };
