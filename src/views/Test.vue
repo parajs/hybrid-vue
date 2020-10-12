@@ -7,11 +7,7 @@
   </page>
 </template>
 <script>
-import { Button } from "vant";
 export default {
-  components: {
-    [Button.name]: Button
-  },
   name: "Test"
 };
 </script>

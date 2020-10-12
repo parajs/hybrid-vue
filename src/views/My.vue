@@ -32,14 +32,8 @@
 </template>
 <script>
 import { mapState } from "vuex";
-import { Form, Field, Button } from "vant";
 export default {
   name: "My",
-  components: {
-    [Form.name]: Form,
-    [Field.name]: Field,
-    [Button.name]: Button
-  },
   data() {
     return {
       username: "",

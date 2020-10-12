@@ -3,7 +3,8 @@ import "@/styles/index.less";
 import Page from "components/Page";
 import createEventBus from "utils/eventBus";
 import "utils/jsbridge";
-import { NavBar, Notify } from "vant";
+import Vant from "vant";
+import "vant/lib/index.less";
 import Vue from "vue";
 import App from "./App.vue";
 import * as filters from "./filters"; // global filters
@@ -14,8 +15,7 @@ import store from "./store";
 import "./permission";
 
 Vue.component(Page.name, Page);
-Vue.use(Notify);
-Vue.use(NavBar);
+Vue.use(Vant);
 createEventBus(Vue);
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key]);
