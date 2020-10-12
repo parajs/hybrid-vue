@@ -1,5 +1,7 @@
 const path = require("path");
+const vConsolePlugin = require("vconsole-webpack-plugin");
 const name = process.env.VUE_APP_TITLE;
+const apiUrl = process.env._APIURL || "api";
 
 function resolve(dir) {
   return path.join(__dirname, dir);
@@ -41,13 +43,13 @@ module.exports = {
         router: resolve("src/router"),
         components: resolve("src/components"),
         icons: resolve("src/icons"),
-        api: resolve("src/api"),
+        apiUrl: resolve(`src/${apiUrl}`),
         assets: resolve("src/assets"),
         store: resolve("src/store"),
-        mock: resolve("src/mock"),
-        urlScheme: resolve("src/urlScheme")
+        mock: resolve("src/mock")
       }
-    }
+    },
+    plugins: [new vConsolePlugin({ enable: !!process.env._ENABLE_VCONSOLE })]
   },
 
   chainWebpack(config) {

@@ -3,16 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "report": "vue-cli-service build --report",
-    "staging": "vue-cli-service build --mode staging",
+    "serve": "cross-env _ENABLE_VCONSOLE=true vue-cli-service serve",
+    "serve:app": "cross-env _APIURL=url _ENABLE_VCONSOLE=true vue-cli-service serve",
+    "build": "cross-env _APIURL=url _REMOVE_CONSOLE=true vue-cli-service build",
+    "report": "cross-env _APIURL=url _REMOVE_CONSOLE=true  vue-cli-service build --report",
+    "staging": "cross-env _APIURL=url _ENABLE_VCONSOLE=true vue-cli-service build --mode staging",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "cz": "npm run log && git add . && git cz",
     "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.{js,vue}\" --locales \"./src/locales/**/*.js\"",
     "log": "conventional-changelog --config ./node_modules/vue-cli-plugin-commitlint/lib/log -i CHANGELOG.md -s -r 0",
-    "serve:mock": "cross-env NODE_ENV=mock vue-cli-service serve"
+    "serve:mock": "cross-env SERVE_TYPE=mock vue-cli-service serve"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -58,7 +59,7 @@
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "svg-sprite-loader": "^5.0.0",
-    "vconsole": "^3.3.4",
+    "vconsole-webpack-plugin": "^1.5.2",
     "vue-cli-plugin-commitlint": "~1.0.12",
     "vue-cli-plugin-i18n": "~1.0.1",
     "vue-template-compiler": "^2.6.11"
