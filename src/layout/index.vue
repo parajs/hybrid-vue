@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
-    <router-view :key="key" />
-    <BottomNav />
+    <router-view />
+    <BottomNav ref="bottomNav" />
   </div>
 </template>
 
@@ -12,19 +12,25 @@ export default {
   components: {
     BottomNav
   },
-  computed: {
-    key() {
-      return this.$route.fullPath;
+  data() {
+    return {
+      bottomNavH: 50
+    };
+  },
+  methods: {
+    init() {
+      const bottomNav = this.$refs.bottomNav;
+      if (bottomNav) {
+        this.bottomNavH = bottomNav.offsetHeight;
+      }
     }
   }
 };
 </script>
 <style lang="less" scoped>
 .layout {
-  height: calc(100vh - 96px);
-  overflow: auto;
-  margin-top: 46px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: calc(100vh - 50px);
+  position: relative;
+  box-sizing: border-box;
 }
 </style>

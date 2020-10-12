@@ -1,5 +1,6 @@
 import "@/icons"; // icon
 import "@/styles/index.less";
+import Page from "components/Page";
 import createEventBus from "utils/eventBus";
 import "utils/jsbridge";
 import { NavBar, Notify } from "vant";
@@ -10,6 +11,9 @@ import i18n from "./i18n";
 import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
+import "./permission";
+
+Vue.component(Page.name, Page);
 Vue.use(Notify);
 Vue.use(NavBar);
 createEventBus(Vue);

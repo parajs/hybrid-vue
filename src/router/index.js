@@ -13,14 +13,30 @@ const routes = [
       {
         path: "/",
         name: "Home",
-        component: Home
+        component: Home,
+        meta: {
+          title: "home-title"
+        }
       },
       {
         path: "/my",
         name: "My",
-        component: My
+        component: My,
+        meta: {
+          title: "my-title"
+        }
       }
     ]
+  },
+  {
+    path: "/",
+    name: "Home",
+    component: Home
+  },
+  {
+    path: "/my",
+    name: "My",
+    component: My
   },
   {
     path: "/test",

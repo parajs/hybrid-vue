@@ -29,4 +29,5 @@
  - | features | [bfb3f93](https://github.com/parajs/vant-vue-template/commit/bfb3f93)
  - | Readme | [ba051d0](https://github.com/parajs/vant-vue-template/commit/ba051d0)
  - | README.md修改 | [1b67f94](https://github.com/parajs/vant-vue-template/commit/1b67f94)
+ - | README修改 | [cf8f5d4](https://github.com/parajs/vant-vue-template/commit/cf8f5d4)
 

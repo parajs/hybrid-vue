@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <van-nav-bar title="我的" fixed />
+  <page>
+    <template #header>
+      <van-nav-bar :title="$t('my-title')" />
+    </template>
     <van-form @submit="onSubmit" class="mt-5" v-if="!token">
       <van-field
         v-model="username"
@@ -26,7 +28,7 @@
         登出
       </van-button>
     </div>
-  </div>
+  </page>
 </template>
 <script>
 import { mapState } from "vuex";
