@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "cross-env _ENABLE_VCONSOLE=true vue-cli-service serve",
+    "serve:mock": "cross-env _ENABLE_VCONSOLE=true _ENABLE_MOCK=true vue-cli-service serve",
     "serve:app": "cross-env _APIURL=url _ENABLE_VCONSOLE=true vue-cli-service serve",
     "build": "cross-env _APIURL=url _REMOVE_CONSOLE=true vue-cli-service build",
     "report": "cross-env _APIURL=url _REMOVE_CONSOLE=true  vue-cli-service build --report",
@@ -12,8 +13,7 @@
     "lint": "vue-cli-service lint",
     "cz": "npm run log && git add . && git cz",
     "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.{js,vue}\" --locales \"./src/locales/**/*.js\"",
-    "log": "conventional-changelog --config ./node_modules/vue-cli-plugin-commitlint/lib/log -i CHANGELOG.md -s -r 0",
-    "serve:mock": "cross-env SERVE_TYPE=mock vue-cli-service serve"
+    "log": "conventional-changelog --config ./node_modules/vue-cli-plugin-commitlint/lib/log -i CHANGELOG.md -s -r 0"
   },
   "dependencies": {
     "axios": "^0.19.2",

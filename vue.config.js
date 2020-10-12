@@ -2,7 +2,7 @@ const path = require("path");
 const vConsolePlugin = require("vconsole-webpack-plugin");
 const name = process.env.VUE_APP_TITLE;
 const apiUrl = process.env._APIURL || "api";
-
+console.log(`apiUrl:${apiUrl}`);
 function resolve(dir) {
   return path.join(__dirname, dir);
 }

@@ -7,7 +7,6 @@
 </template>
 <script>
 import { Button } from "vant";
-import { READ_MEM_FROM_NATIVE } from "urlScheme";
 export default {
   components: {
     [Button.name]: Button
@@ -18,20 +17,8 @@ export default {
       params: {}
     };
   },
-  mounted() {
-    READ_MEM_FROM_NATIVE({ userId: "", token: "" });
-    window.onCallJs = this.onCallJs;
-  },
-  methods: {
-    onCallJs(result) {
-      // {
-      //   params: {},
-      //   action: '',
-      //   type: ''
-      // }
-      console.log(result);
-    }
-  }
+  mounted() {},
+  methods: {}
 };
 </script>
 <style lang="less" scoped>

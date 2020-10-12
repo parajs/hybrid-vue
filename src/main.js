@@ -1,7 +1,7 @@
 import "@/icons"; // icon
 import "@/styles/index.less";
 import createEventBus from "utils/eventBus";
-import JSBridge from "utils/JSBridge";
+import "utils/jsbridge";
 import { NavBar, Notify } from "vant";
 import Vue from "vue";
 import App from "./App.vue";
@@ -12,13 +12,12 @@ import router from "./router";
 import store from "./store";
 Vue.use(Notify);
 Vue.use(NavBar);
-Vue.prototype.JSBridge = JSBridge;
 createEventBus(Vue);
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key]);
 });
 
-if (process.env.SERVE_TYPE == "mock") {
+if (process.env._ENABLE_MOCK) {
   require("./mock");
 }
 
