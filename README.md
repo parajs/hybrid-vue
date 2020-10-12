@@ -12,10 +12,16 @@ yarn install
 yarn serve
 ```
 
-### Compiles、mock and hot-reloads for development
+### Compiles、mock service and hot-reloads for development
 
 ```
 yarn serve:mock
+```
+
+### Compiles、request to go native and hot-reloads for development
+
+```
+yarn serve:app
 ```
 
 ### Compiles and minifies for production
@@ -72,7 +78,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 │   ├── router                 # 路由
 │   ├── store                  # 全局 store管理
 │   ├── styles                 # 全局样式
-|   ├── urlScheme              # h5与native通信URL Scheme
+|   ├── url                    # h5通过native发送请求
 │   ├── utils                  # 全局公用方法
 │   ├── views                  # views 所有页面
 │   ├── App.vue                # 入口页面
