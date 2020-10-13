@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <div ref="header" class="wrapper-header" v-if="$slots.header">
       <div class="safe-area-inset-top"></div>
       <slot name="header"></slot>
@@ -48,6 +48,9 @@ export default {
 };
 </script>
 <style lang="less" scoped>
+.page {
+  height: 100%;
+}
 .safe-area-inset-top {
   /* Status bar height on iOS 11.0 */
   padding-top: constant(safe-area-inset-top);
@@ -67,7 +70,7 @@ export default {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 200;
+  z-index: 20000;
   // background: var(--navbar-color, #005eb5);
 }
 
