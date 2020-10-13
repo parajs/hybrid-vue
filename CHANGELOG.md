@@ -1,4 +1,4 @@
-# 0.1.0 (2020-10-12)
+# 0.1.0 (2020-10-13)
 
 ### 🌟 新功能
 范围|描述|commitId
@@ -15,6 +15,7 @@
  - | 添加keepAlive功能 | [767beff](https://github.com/parajs/vant-vue-template/commit/767beff)
  - | 添加vue-cli3的代码提交检查规范 | [db7c35e](https://github.com/parajs/vant-vue-template/commit/db7c35e)
  - | 添加国际化功能 | [be99c11](https://github.com/parajs/vant-vue-template/commit/be99c11)
+ - | 生产环境移除console配置、vant修改为全局引入 | [162c8f1](https://github.com/parajs/vant-vue-template/commit/162c8f1)
  - | 页面结构调整、刘海适配等 | [baddb17](https://github.com/parajs/vant-vue-template/commit/baddb17)
 
 

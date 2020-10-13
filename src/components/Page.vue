@@ -1,16 +1,18 @@
 <template>
-  <div
-    class="main-container"
-    :style="{ bottom: footerh + 'px', top: headerh + 'px' }"
-  >
+  <div>
     <div ref="header" class="wrapper-header" v-if="$slots.header">
       <div class="safe-area-inset-top"></div>
       <slot name="header"></slot>
     </div>
-    <slot></slot>
+    <div
+      class="main-container"
+      :style="{ bottom: footerh + 'px', top: headerh + 'px' }"
+    >
+      <slot></slot>
+    </div>
     <div ref="footer" v-if="$slots.footer" class="wrapper-footer">
-      <div class="safe-area-inset-bottom"></div>
       <slot name="footer"></slot>
+      <div class="safe-area-inset-bottom"></div>
     </div>
   </div>
 </template>
@@ -49,10 +51,8 @@ export default {
 .safe-area-inset-top {
   /* Status bar height on iOS 11.0 */
   padding-top: constant(safe-area-inset-top);
-  // padding-bottom: constant(safe-area-inset-bottom);
   /* Status bar height on iOS 11+ */
   padding-top: calc(env(safe-area-inset-top) * 1);
-  // padding-bottom: calc(env(safe-area-inset-bottom) * 1);
 }
 
 .safe-area-inset-bottom {
@@ -63,12 +63,28 @@ export default {
 }
 
 .wrapper-header {
-  position: fixed;
+  position: absolute; // 不用fixed原因，在ios上各种问题，表单场景
   top: 0;
   left: 0;
   right: 0;
   z-index: 200;
   // background: var(--navbar-color, #005eb5);
+}
+
+.main-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.wrapper-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 200;
 }
 
 .wrapper-header /deep/ .van-nav-bar__left {
@@ -83,13 +99,5 @@ export default {
 
 .wrapper-header /deep/ .van-nav-bar__right i {
   font-size: 20px;
-}
-
-.main-container {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
 }
 </style>
