@@ -5,6 +5,7 @@
       <slot name="header"></slot>
     </div>
     <div
+      ref="main"
       class="main-container"
       :style="{ bottom: footerh + 'px', top: headerh + 'px' }"
     >

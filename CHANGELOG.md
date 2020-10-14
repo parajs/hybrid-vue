@@ -1,4 +1,4 @@
-# 0.1.0 (2020-10-13)
+# 0.1.0 (2020-10-14)
 
 ### 🌟 新功能
 范围|描述|commitId
@@ -25,6 +25,7 @@
 --|--|--
  - | i18n:report启动报错问题 | [cb9c1d7](https://github.com/parajs/vant-vue-template/commit/cb9c1d7)
  - | package.json | [005ef0a](https://github.com/parajs/vant-vue-template/commit/005ef0a)
+ - | 样式调整 | [0b51d5b](https://github.com/parajs/vant-vue-template/commit/0b51d5b)
 
 
 ### 📝 文档
