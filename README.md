@@ -26,10 +26,16 @@ yarn serve:mock
 yarn serve:app
 ```
 
-### Compiles and minifies for production
+### 构建 hybrid 生产版本
 
 ```
 yarn build
+```
+
+### 构建 h5 生产版本
+
+```
+yarn build:h5
 ```
 
 ### Run your unit tests

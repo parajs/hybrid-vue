@@ -1,4 +1,4 @@
-# 0.1.0 (2020-10-15)
+# [1.0.0](https://github.com/parajs/vant-vue-template/compare/509a659...v1.0.0) (2020-10-15)
 
 ### 🌟 新功能
 范围|描述|commitId
@@ -37,6 +37,7 @@
  - | README.md修改 | [1b67f94](https://github.com/parajs/vant-vue-template/commit/1b67f94)
  - | README.md文档更新 | [9a55c6e](https://github.com/parajs/vant-vue-template/commit/9a55c6e)
  - | README修改 | [cf8f5d4](https://github.com/parajs/vant-vue-template/commit/cf8f5d4)
+ - | 文档修改 | [2cc3b80](https://github.com/parajs/vant-vue-template/commit/2cc3b80)
  - | 文档修改 | [452c975](https://github.com/parajs/vant-vue-template/commit/452c975)
 
 
@@ -44,4 +45,9 @@
 范围|描述|commitId
 --|--|--
  - | 代码修改 | [7f5c247](https://github.com/parajs/vant-vue-template/commit/7f5c247)
+
+
+范围|描述|commitId
+--|--|--
+ - | 1.0.0 | [f7138e3](https://github.com/parajs/vant-vue-template/commit/f7138e3)
 
