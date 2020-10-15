@@ -3,7 +3,7 @@
     <template #header>
       <van-nav-bar :title="$t('test-title')" />
     </template>
-    <div   class="title">test</div>
+    <div class="title">test</div>
     <template #footer>
       <div>
         footer
@@ -22,5 +22,4 @@ export default {
   font-size: 18px;
   margin-top: 30px;
 }
-
 </style>
