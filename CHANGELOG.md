@@ -37,6 +37,7 @@
  - | README.md修改 | [1b67f94](https://github.com/parajs/vant-vue-template/commit/1b67f94)
  - | README.md文档更新 | [9a55c6e](https://github.com/parajs/vant-vue-template/commit/9a55c6e)
  - | README修改 | [cf8f5d4](https://github.com/parajs/vant-vue-template/commit/cf8f5d4)
+ - | 文档修改 | [452c975](https://github.com/parajs/vant-vue-template/commit/452c975)
 
 
 ### 🔨 代码重构
