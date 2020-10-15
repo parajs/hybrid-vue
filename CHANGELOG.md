@@ -1,10 +1,11 @@
-# 0.1.0 (2020-10-14)
+# 0.1.0 (2020-10-15)
 
 ### 🌟 新功能
 范围|描述|commitId
 --|--|--
  - |  H5 与 native 交互 | [71e480c](https://github.com/parajs/vant-vue-template/commit/71e480c)
  - | init | [509a659](https://github.com/parajs/vant-vue-template/commit/509a659)
+ - | Page组件添加ref='main' | [bb1fd1b](https://github.com/parajs/vant-vue-template/commit/bb1fd1b)
  - | url scheme定义 | [e7cddf8](https://github.com/parajs/vant-vue-template/commit/e7cddf8)
  - | 优化vconsole使用方式及scripts配置优化 | [ee728f0](https://github.com/parajs/vant-vue-template/commit/ee728f0)
  - | 修改Notify | [eb70c08](https://github.com/parajs/vant-vue-template/commit/eb70c08)

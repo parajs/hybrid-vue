@@ -111,6 +111,7 @@ vue-i118n 库提供国际化支持
 
 ### Features
 
+- 支持一键切换调试，h5 与 api 服务调试、h5 与 native 调试
 - vant 库用是 less 预处理器，所以项目里优先推荐也用 less，保持一致，devDependencies 依赖里 scss 相关库,所以也支持 scss
 - 支持 mock 数据
 - 支持 vconsole 功能，开发环境默认开起调试功能
