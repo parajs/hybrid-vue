@@ -1,10 +1,29 @@
 language: node_js
 node_js:
   - 12
-script: npm run build:h5
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  on:
-    branch: master
+install:
+  - npm install
+
+script:
+  - npm run build:h5
+
+ cache:
+  - directories:
+   - node_modules
+
+after_success:
+  - cd ./dist
+  - git init
+  - git config --global user.name "${U_NAME}"
+  - git config --global user.email "${U_EMAIL}"
+  - git add .
+  - git commit -m "Automatically update from travis-ci"
+  - git push --quiet --force  "https://${GITHUB_TOKEN}@${GH_REF}" master:${P_BRANCH}
+
+branches:
+  only:
+    - master # 触发持续集成分支
+env:
+  global:
+    - GH_REF: github.com/parajs/hybrid-vue.git
+    - P_BRANCH: gh-pages
