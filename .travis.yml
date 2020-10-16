@@ -10,19 +10,30 @@ install:
 script:
   - npm run build:h5
 
-after_success:
-  - cd ./dist
-  - git init
-  - git config --global user.name "${U_NAME}"
-  - git config --global user.email "${U_EMAIL}"
-  - git add .
-  - git commit -m "Automatically update from travis-ci"
-  - git push --quiet --force  "https://${GITHUB_TOKEN}@${GH_REF}" master:${P_BRANCH}
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  local_dir: dist
+  name: $U_NAME
+  email: $U_EMAIL
+  on:
+    branch: master
+    
+# after_success:
+#   - cd ./dist
+#   - git init
+#   - git config --global user.name "${U_NAME}"
+#   - git config --global user.email "${U_EMAIL}"
+#   - git add .
+#   - git commit -m "Automatically update from travis-ci"
+#   - git push --quiet --force  "https://${GITHUB_TOKEN}@${GH_REF}" master:${P_BRANCH}
 
 branches:
   only:
     - master # 触发持续集成分支
-env:
-  global:
-    - GH_REF: github.com/parajs/hybrid-vue.git
-    - P_BRANCH: gh-pages
+# env:
+#   global:
+#     - GH_REF: github.com/parajs/hybrid-vue.git
+#     - P_BRANCH: gh-pages
