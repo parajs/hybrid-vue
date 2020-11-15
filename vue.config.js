@@ -56,6 +56,11 @@ module.exports = {
     config.plugins.delete("preload"); // delete preload plugin
     config.plugins.delete("prefetch"); // delete prefetch plugin
 
+    config.optimization.minimizer("terser").tap(options => {
+      options[0].terserOptions.compress.dead_code = false; // 删除不执行的代码
+      return options;
+    });
+
     // set svg-sprite-loader
     config.module
       .rule("svg")

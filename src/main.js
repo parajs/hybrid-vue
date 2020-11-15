@@ -9,10 +9,10 @@ import Vue from "vue";
 import App from "./App.vue";
 import * as filters from "./filters"; // global filters
 import i18n from "./i18n";
+import "./permission";
 import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
-import "./permission";
 
 Vue.component(Page.name, Page);
 Vue.use(Vant);
@@ -21,12 +21,11 @@ Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key]);
 });
 
-if (process.env._ENABLE_MOCK) {
+if (false) {
   require("./mock");
 }
 
 Vue.config.productionTip = false;
-
 new Vue({
   router,
   store,

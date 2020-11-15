@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "cross-env _ENABLE_VCONSOLE=true vue-cli-service serve",
-    "serve:mock": "cross-env _ENABLE_VCONSOLE=true _ENABLE_MOCK=true vue-cli-service serve",
+    "serve:mock": "cross-env _ENABLE_VCONSOLE=true vue-cli-service serve",
     "serve:app": "cross-env _APIURL=url _ENABLE_VCONSOLE=true vue-cli-service serve",
     "build": "cross-env _APIURL=url _REMOVE_CONSOLE=true vue-cli-service build",
     "build:h5": "cross-env _APIURL=api _REMOVE_CONSOLE=true vue-cli-service build",
-    "report": "cross-env _APIURL=url _REMOVE_CONSOLE=true  vue-cli-service build --report",
+    "report": "cross-env _APIURL=url  _REMOVE_CONSOLE=true  vue-cli-service build --report",
     "staging": "cross-env _APIURL=url _ENABLE_VCONSOLE=true vue-cli-service build --mode staging",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
