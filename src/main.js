@@ -21,7 +21,7 @@ Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key]);
 });
 
-if (false) {
+if (process.env.VUE_APP_ENABLE_MOCK) {
   require("./mock");
 }
 

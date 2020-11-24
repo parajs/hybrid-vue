@@ -57,7 +57,7 @@ module.exports = {
     config.plugins.delete("prefetch"); // delete prefetch plugin
 
     config.optimization.minimizer("terser").tap(options => {
-      options[0].terserOptions.compress.dead_code = false; // 删除不执行的代码
+      options[0].terserOptions.compress.dead_code = true; // 删除不执行的代码
       return options;
     });
 

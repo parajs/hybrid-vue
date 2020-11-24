@@ -1,3 +1,31 @@
+# [1.0.0](https://github.com/parajs/hybrid-vue/compare/2.0.0...1.0.0) (2020-11-24)
+# [2.0.0](https://github.com/parajs/hybrid-vue/compare/v1.0.0...2.0.0) (2020-11-15)
+
+### 🌟 新功能
+范围|描述|commitId
+--|--|--
+ - | eslintrc配置修改 | [9b345b6](https://github.com/parajs/hybrid-vue/commit/9b345b6)
+ - | 优化打包策略 | [b115d7b](https://github.com/parajs/hybrid-vue/commit/b115d7b)
+
+
+### 🎨 代码样式
+范围|描述|commitId
+--|--|--
+ - | 格式化代码 | [2f58512](https://github.com/parajs/hybrid-vue/commit/2f58512)
+
+
+### 📦 持续集成
+范围|描述|commitId
+--|--|--
+ - | travis | [795d73d](https://github.com/parajs/hybrid-vue/commit/795d73d)
+ - | travis | [92f7d7e](https://github.com/parajs/hybrid-vue/commit/92f7d7e)
+ - | travis修改 | [86ea78f](https://github.com/parajs/hybrid-vue/commit/86ea78f)
+ - | travis配置 | [fbad3d3](https://github.com/parajs/hybrid-vue/commit/fbad3d3)
+ - | travis配置 | [07a4b01](https://github.com/parajs/hybrid-vue/commit/07a4b01)
+ - | Travis配置 | [35a8686](https://github.com/parajs/hybrid-vue/commit/35a8686)
+ - | Travis配置 | [a067e26](https://github.com/parajs/hybrid-vue/commit/a067e26)
+ travis修改 | travis修改 | [04f84bf](https://github.com/parajs/hybrid-vue/commit/04f84bf)
+
 # [1.0.0](https://github.com/parajs/hybrid-vue/compare/509a659...v1.0.0) (2020-10-15)
 
 ### 🌟 新功能

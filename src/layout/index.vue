@@ -1,5 +1,5 @@
 <template>
-  <div class="layout">
+  <div class="layout" :style="{ height: `calc(100vh - ${bottomNavH}px)` }">
     <keep-alive>
       <router-view v-if="$route.meta && $route.meta.keepAlive"> </router-view>
     </keep-alive>
@@ -20,6 +20,13 @@ export default {
       bottomNavH: 50
     };
   },
+  mounted() {
+    this.init();
+    window.addEventListener("resize", this.init());
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.init());
+  },
   methods: {
     init() {
       const bottomNav = this.$refs.bottomNav;
@@ -32,7 +39,6 @@ export default {
 </script>
 <style lang="less" scoped>
 .layout {
-  height: calc(100vh - 50px);
   position: relative;
 }
 </style>

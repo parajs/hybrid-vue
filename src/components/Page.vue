@@ -42,7 +42,7 @@ export default {
       }
 
       if (refFooter) {
-        this.footerH = refFooter.offsetHeight;
+        this.footerh = refFooter.offsetHeight;
       }
     }
   }

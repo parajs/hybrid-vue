@@ -1,17 +1,11 @@
-import NProgress from "nprogress"; // progress bar
-import "nprogress/nprogress.css"; // progress bar style
 import { getCookie } from "utils/cookie"; // get token from cookie
 import getPageTitle from "utils/get-page-title";
 import router from "./router";
 import store from "./store";
 
-NProgress.configure({ showSpinner: false }); // NProgress Configuration
-
 const whiteList = ["Home", "Test", "My"]; // no redirect whitelist
 
 router.beforeEach(async (to, from, next) => {
-  // start progress bar
-  NProgress.start();
   // set page title/
   document.title = getPageTitle(to.meta.title);
 
@@ -29,7 +23,6 @@ router.beforeEach(async (to, from, next) => {
       } catch (error) {
         // remove token and go to home
         await store.dispatch("user/reset");
-        NProgress.done();
       }
     }
   } else {
@@ -40,12 +33,8 @@ router.beforeEach(async (to, from, next) => {
     } else {
       // other pages that do not have permission to access are redirected to the login page.
       next("/login");
-      NProgress.done();
     }
   }
 });
 
-router.afterEach(() => {
-  // finish progress bar
-  NProgress.done();
-});
+router.afterEach(() => {});
