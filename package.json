@@ -1,6 +1,6 @@
 {
   "name": "hybrid-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "serve": "cross-env _ENABLE_VCONSOLE=true vue-cli-service serve",
