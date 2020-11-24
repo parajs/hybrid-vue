@@ -1,3 +1,15 @@
+## [1.0.2](https://github.com/parajs/hybrid-vue/compare/v1.0.1...v1.0.2) (2020-11-24)
+
+### 🌟 新功能
+范围|描述|commitId
+--|--|--
+ - | 页面结构重构、增加条件编译等 | [a89c626](https://github.com/parajs/hybrid-vue/commit/a89c626)
+
+
+范围|描述|commitId
+--|--|--
+ - | 1.0.2 | [bc32a9f](https://github.com/parajs/hybrid-vue/commit/bc32a9f)
+
 ## [1.0.1](https://github.com/parajs/hybrid-vue/compare/2.0.0...v1.0.1) (2020-11-24)
 
 ### 🐛 Bug 修复

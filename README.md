@@ -29,13 +29,36 @@ yarn serve:app
 ### 构建 hybrid 生产版本
 
 ```
-yarn build
+yarn build:app
 ```
 
 ### 构建 h5 生产版本
 
 ```
-yarn build:h5
+yarn build
+```
+
+
+### 构建 hybrid 测试版本
+
+```
+yarn staging:app
+```
+### 构建 h5 测试版本
+
+```
+yarn staging
+```
+
+### 生成 hybrid 生产版依赖分析
+
+```
+yarn report:app
+```
+### 构建 h5 生产版依赖分析
+
+```
+yarn report
 ```
 
 ### Run your unit tests
