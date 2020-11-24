@@ -1,5 +1,6 @@
 import { getUser, login, logout } from "apiUrl/user";
 import router from "router";
+import { mutateState } from "utils";
 import { getCookie, removeCookie, setCookie } from "utils/cookie";
 
 const state = {
@@ -7,6 +8,10 @@ const state = {
   user: {
     username: ""
   }
+};
+
+const mutations = {
+  mutateState
 };
 
 const actions = {
@@ -41,5 +46,6 @@ const actions = {
 export default {
   namespaced: true,
   state,
-  actions
+  actions,
+  mutations
 };

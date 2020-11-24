@@ -1,4 +1,10 @@
 # [1.0.0](https://github.com/parajs/hybrid-vue/compare/2.0.0...1.0.0) (2020-11-24)
+
+### chore
+范围|描述|commitId
+--|--|--
+ - | 移除nprogress | [0c2b357](https://github.com/parajs/hybrid-vue/commit/0c2b357)
+
 # [2.0.0](https://github.com/parajs/hybrid-vue/compare/v1.0.0...2.0.0) (2020-11-15)
 
 ### 🌟 新功能
