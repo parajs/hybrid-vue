@@ -1,5 +1,5 @@
 <template>
-  <van-tabbar route class="afe-area-inset-bottom">
+  <van-tabbar :fixed="false" route>
     <van-tabbar-item replace to="/" icon="home-o">
       首页
     </van-tabbar-item>
@@ -10,13 +10,8 @@
 </template>
 
 <script>
-import { Tabbar, TabbarItem } from "vant";
 export default {
-  name: "BottomNav",
-  components: {
-    [Tabbar.name]: Tabbar,
-    [TabbarItem.name]: TabbarItem
-  }
+  name: "BottomNav"
 };
 </script>
 

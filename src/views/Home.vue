@@ -10,13 +10,24 @@
         finished-text="没有更多了"
         @load="onLoad"
       >
-        <van-cell v-for="item in list" :key="item" :title="item" />
+        <van-cell
+          :to="{ name: 'Detail', params: { id: item.id } }"
+          clickable
+          class="mt-3"
+          v-for="item in list"
+          :key="item.id"
+          :title="item.content"
+        />
       </van-list>
     </van-pull-refresh>
+    <template #footer>
+      <bottom-nav />
+    </template>
   </page>
 </template>
-
 <script>
+const content = `该项目基于 vant ui 框架，解决移动端开发和混合开发遇到常见问题，
+  例如：mock 数据、h5 与 native 通信、h5 调试、适配、国际化等问题`;
 export default {
   name: "Home",
   data() {
@@ -36,7 +47,8 @@ export default {
         }
 
         for (let i = 0; i < 15; i++) {
-          this.list.push(this.list.length + 1);
+          const id = this.list.length + 1;
+          this.list.push({ id: id, content: content + id });
         }
         this.loading = false;
 

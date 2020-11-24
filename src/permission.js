@@ -3,7 +3,7 @@ import getPageTitle from "utils/get-page-title";
 import router from "./router";
 import store from "./store";
 
-const whiteList = ["Home", "Test", "My"]; // no redirect whitelist
+const whiteList = ["Home", "Test", "My", "Detail"]; // no redirect whitelist
 
 router.beforeEach(async (to, from, next) => {
   // set page title/

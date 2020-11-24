@@ -1,8 +1,11 @@
 import "@/icons"; // icon
 import "@/styles/index.less";
-import Page from "components/Page";
+import BottomNav from "layout/BottomNav";
+import Page from "layout/Page";
 import createEventBus from "utils/eventBus";
+/* IFTRUE_isAppEnv */
 import "utils/jsbridge";
+/* FITRUE_isAppEnv */
 import Vant from "vant";
 import "vant/lib/index.less";
 import Vue from "vue";
@@ -15,15 +18,16 @@ import router from "./router";
 import store from "./store";
 
 Vue.component(Page.name, Page);
+Vue.component(BottomNav.name, BottomNav);
 Vue.use(Vant);
 createEventBus(Vue);
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key]);
 });
 
-if (process.env.VUE_APP_ENABLE_MOCK) {
-  require("./mock");
-}
+/* IFDEBUG */
+require("./mock");
+/*FIDEBUG */
 
 Vue.config.productionTip = false;
 new Vue({

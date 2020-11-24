@@ -6,10 +6,9 @@ console.log(`apiUrl:${apiUrl}`);
 function resolve(dir) {
   return path.join(__dirname, dir);
 }
-
+console.log(process.env.NODE_ENV === "development");
 module.exports = {
   lintOnSave: true,
-
   devServer: {
     open: true,
     port: 3000,
@@ -30,7 +29,6 @@ module.exports = {
   },
 
   productionSourceMap: false,
-
   configureWebpack: {
     // provide the app's title in webpack's name field, so that
     // it can be accessed in index.html to inject the correct title.
@@ -56,11 +54,6 @@ module.exports = {
     config.plugins.delete("preload"); // delete preload plugin
     config.plugins.delete("prefetch"); // delete prefetch plugin
 
-    config.optimization.minimizer("terser").tap(options => {
-      options[0].terserOptions.compress.dead_code = true; // 删除不执行的代码
-      return options;
-    });
-
     // set svg-sprite-loader
     config.module
       .rule("svg")
@@ -75,6 +68,23 @@ module.exports = {
       .loader("svg-sprite-loader")
       .options({
         symbolId: "icon-[name]"
+      })
+      .end();
+    config.module
+      .rule("vue")
+      .use("js-conditional-compile-loader")
+      .loader("js-conditional-compile-loader")
+      .options({
+        isAppEnv: process.env._APP_TYPE === "APP"
+      })
+      .end();
+
+    config.module
+      .rule("js")
+      .use("js-conditional-compile-loader")
+      .loader("js-conditional-compile-loader")
+      .options({
+        mock: process.env.NODE_ENV === "development"
       })
       .end();
   },

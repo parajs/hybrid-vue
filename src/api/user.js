@@ -8,6 +8,7 @@ import request from "@/utils/request";
  * @returns Promise
  */
 export function login(data) {
+  debugger;
   return request({
     url: `/user/login`,
     method: "post",
@@ -32,9 +33,9 @@ export function logout() {
  * @param { string }
  * @return: Promise
  */
-export function getuser(params) {
+export function getUser(params) {
   return request({
-    url: `/user/getuser`,
+    url: `/user/getUser`,
     method: "get",
     params: params
   });

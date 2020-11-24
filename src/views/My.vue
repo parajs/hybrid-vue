@@ -28,6 +28,9 @@
         登出
       </van-button>
     </div>
+    <template #footer>
+      <bottom-nav />
+    </template>
   </page>
 </template>
 <script>

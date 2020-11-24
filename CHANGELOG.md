@@ -1,9 +1,20 @@
-# [1.0.0](https://github.com/parajs/hybrid-vue/compare/2.0.0...1.0.0) (2020-11-24)
+## [1.0.1](https://github.com/parajs/hybrid-vue/compare/2.0.0...v1.0.1) (2020-11-24)
+
+### 🐛 Bug 修复
+范围|描述|commitId
+--|--|--
+ - | 添加user模块mutaions | [88ae07f](https://github.com/parajs/hybrid-vue/commit/88ae07f)
+
 
 ### chore
 范围|描述|commitId
 --|--|--
  - | 移除nprogress | [0c2b357](https://github.com/parajs/hybrid-vue/commit/0c2b357)
+
+
+范围|描述|commitId
+--|--|--
+ - | 1.0.1 | [4f04f56](https://github.com/parajs/hybrid-vue/commit/4f04f56)
 
 # [2.0.0](https://github.com/parajs/hybrid-vue/compare/v1.0.0...2.0.0) (2020-11-15)
 

@@ -1,4 +1,4 @@
-const title = process.env.VUE_APP_TITLE || "vant-vue-template";
+const title = process.env.VUE_APP_TITLE || "hybrid-vue";
 
 export default function getPageTitle(pageTitle) {
   if (pageTitle) {
