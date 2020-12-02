@@ -156,3 +156,5 @@ vue-i118n 库提供国际化支持
   - 自动提示 commit 填写格式。不怕忘记规范怎么写
   - 集成 git add . && git commit 不需要在执行两个命令
   - 自动生成 changelog
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chenguzhen87&layout=compact)
