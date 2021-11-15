@@ -1,6 +1,6 @@
 # hybrid-vue
 
-该项目基于 vant-ui 框架，解决移动端开发和混合开发遇到常见问题，例如：mock 数据、h5 与 native 通信、h5 调试、适配、国际化等一系列问题
+该项目基于 vant-ui 框架，解决移动端开发和混合开发遇到常见问题，例如：mock 数据、h5 与 native 通信、h5 调试、适配、国际化等问题
 
 ## Project setup
 
